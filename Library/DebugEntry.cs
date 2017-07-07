@@ -10,9 +10,13 @@ namespace BlendInteractive.Denina.Core
     public struct DebugEntry
     {
         public string CommandName { get; private set; }
+
         public string CommandText { get; private set; }
+
         public string InputValue { get; set; }
+
         public string OutputValue { get; set; }
+
         public bool SuccessfullyExecuted { get; set; }
 
         public DebugEntry(PipelineCommand command) : this()

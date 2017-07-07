@@ -8,10 +8,10 @@ namespace DeninaSharp.Core
     public class DeninaException : Exception
     {
         public string CurrentCommandText { get; set; }
+
         public string CurrentCommandName { get; set; }
 
         public List<DebugEntry> DebugData { get; set; }
-
 
         public DeninaException()
         {
